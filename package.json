@@ -1,0 +1,18 @@
+{
+  "name": "gptboost-backend",
+  "version": "1.0.0",
+  "scripts": {
+    "local": "node local-server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Serverless Node.js backend for OpenAI chat integration",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "openai": "^6.15.0",
+    "uuid": "^13.0.0"
+  },
+  "type": "module"
+}
