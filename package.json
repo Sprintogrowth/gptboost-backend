@@ -9,6 +9,7 @@
   "license": "ISC",
   "description": "Serverless Node.js backend for OpenAI chat integration",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "openai": "^6.15.0",

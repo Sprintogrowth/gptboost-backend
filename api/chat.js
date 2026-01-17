@@ -1,7 +1,8 @@
 import openai from "../lib/openai.js";
 import { GPTS } from "../config/gpts.js";
 
-export async function chatHandler(req, res) {
+// Change 'export async function chatHandler' to 'export default async function'
+export default async function (req, res) {
   try {
     const { message, gptId = "default" } = req.body;
 
@@ -9,7 +10,6 @@ export async function chatHandler(req, res) {
       return res.status(400).json({ error: "Message is required" });
     }
 
-    // Resolve GPT configuration dynamically
     const gptConfig = GPTS[gptId];
 
     if (!gptConfig) {
